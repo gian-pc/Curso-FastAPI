@@ -1,0 +1,11 @@
+# Ignorar configuración de PyCharm
+.idea/
+
+# Ignorar caché de Python
+__pycache__/
+
+# Ignorar archivo de pruebas HTTP
+test_main.http
+
+# Ignorar .gitignore
+.gitignore/
