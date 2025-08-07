@@ -10,3 +10,4 @@
     $ uvicorn main:app --reload
     ```
 3. Primer endpoint
+4. Parámetro de ruta y de consulta(Query)
