@@ -11,3 +11,5 @@
     ```
 3. Primer endpoint
 4. Parámetro de ruta y de consulta(Query)
+5. Pydantic (Librería)
+   - ✅Validación y serialización de datos

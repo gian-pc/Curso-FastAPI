@@ -2,17 +2,26 @@ from typing import Union
 
 from fastapi import FastAPI
 
+from pydantic import BaseModel
+
 # Creación de una aplicación FastAPI
 app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offer: Union[bool, None] = None
 
 
 @app.get("/")
 def root():
     return {"message": "Hola Mundo..."}
 
+
 # Tipos de parámetros:
-#  - Parámetro de ruta: {item_id}
-#  - Parámetro de consulta(opcional): q
+#  - Parámetro de ruta: {item_id} /
+#  - Parámetro de consulta(opcional) ?, &: q
 # http://localhost:8000/items/1000?q=mouse
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
