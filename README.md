@@ -14,3 +14,4 @@
 5. Pydantic (Librería)
    - ✅Validación y serialización de datos
 6. Organizamos en una carpeta los modelos
+7. Desventaja de no especificar el tipo de dato

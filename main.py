@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Hola Mundo..."}
+    return {"message": "Hola Mundo"}
 
 
 # Tipos de parámetros:
